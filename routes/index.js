@@ -8,7 +8,7 @@ module.exports = app =>{
     app.use(cors());
 
     // User Routes
-    app.get("/hello", UserController.hello);
+    app.get("/ola", UserController.hello);
     app.post("/login", AuthController.login);
     app.get("/users", UserController.getAll)
     app.get("/users/:id", UserController.getOne)
